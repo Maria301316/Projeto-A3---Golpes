@@ -66,3 +66,4 @@ coverage/
 
 # Ignore arquivos de sistema do Git
 .gitignore.local
+backend/whisper.cpp

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "smart-whisper": "^0.8.1",
+    "whisper-cli": "^1.4.1"
+  },
+  "scripts": {
+    "transcribe": "npx whisper-cli"
+  }
+}

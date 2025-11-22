@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeCall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="icon">🛡️</div>
+        <h1>SafeCall</h1>
+        <p class="subtitle">Prevenção de golpes telefônicos</p>
+    </div>
+
+    <button class="btn-primary" id="btngravar">Gravar áudio</button>
+    <button class="btn-secondary" id="uploadBtn">Analisar Transcrição</button>
+
+	<div class="result-box" id="divTranscricao" style="display: none"></div>
+
+    <div class="result-box" id="resultBox" style="display: none">
+        <h2>Resultado</h2>
+        <div id="result"></div>
+        <strong>Áudio:</strong>
+        <textarea class="textarea" id="transcricaotxt" disabled placeholder="Transcrição do áudio"></textarea>
+    </div>
+
+</div>
+
+<!-- Tela de Loading -->
+<div id="loadingOverlay" style="display: none">
+    <div class="spinner"></div>
+    <p>Processando áudio...</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
